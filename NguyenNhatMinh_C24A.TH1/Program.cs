@@ -42,13 +42,13 @@ namespace NguyenNhatMinh_C24A.TH1
                         Console.WriteLine("\nTổng lương phải trả: {0:N0} VND", ql.TinhTongLuong());
                         break;
                     case 4:
-                        Console.WriteLine("Đã thoát chương trình!");
-                        break;
+                        return;
                     default:
                         Console.WriteLine("Lỗi: Vui lòng chọn số từ 1 đến 4.");
                         break;
                 }
             } while (choice != 4);
+            Console.ReadLine();
         }
     }
 }
